@@ -38,8 +38,11 @@ curl -X POST localhost:8000/triage -H 'content-type: application/json' \
 
 ## ServiceNow connector (optional)
 
-The agent can triage new incidents from a ServiceNow instance. Use a free
-[Personal Developer Instance](https://developer.servicenow.com) with fake data.
+## ServiceNow connector (optional)
+
+Status: tested with a mocked API only; not yet verified against a live instance.
+
+The agent can triage new incidents from a ServiceNow instance. ...
 
 ```bash
 set SN_INSTANCE=https://devXXXXX.service-now.com
