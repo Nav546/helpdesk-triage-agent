@@ -15,5 +15,5 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - run: pip install pytest fastapi httpx
-      - run: pytest -q
+      - run: python -m pytest -q
       - run: python -m triage_agent.cli file data/sample_tickets.json
