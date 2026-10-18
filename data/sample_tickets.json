@@ -1,0 +1,14 @@
+[
+  {"id": "TKT-101", "summary": "Forgot my password", "description": "My password expired over the weekend and I cannot sign in."},
+  {"id": "TKT-102", "summary": "New phone, authenticator not working", "description": "I got a new phone and my authenticator app does not have my account."},
+  {"id": "TKT-103", "summary": "Locked out of my account", "description": "Too many attempts this morning, urgent as I cannot work."},
+  {"id": "TKT-104", "summary": "Printer offline", "description": "The office printer shows offline and my print queue is stuck."},
+  {"id": "TKT-105", "summary": "VPN connection failed from home", "description": "I am working from home and the VPN will not connect."},
+  {"id": "TKT-106", "summary": "Laptop very slow and freezing", "description": "It has been freezing since the last update and crashes twice a day."},
+  {"id": "TKT-107", "summary": "Not receiving email in Outlook", "description": "My mailbox stopped getting mail this morning."},
+  {"id": "TKT-108", "summary": "Till 3 not working", "description": "Register and eftpos on lane 3 will not start in the store."},
+  {"id": "TKT-109", "summary": "Suspicious email, I clicked a link", "description": "I got a phishing email and clicked a link before I realised."},
+  {"id": "TKT-110", "summary": "All stores cannot trade", "description": "Outage reported. Everyone in the region has payment terminals down."},
+  {"id": "TKT-111", "summary": "Need a meeting room booked", "description": "Please book a room for next Tuesday."},
+  {"id": "TKT-112", "summary": "Shared mailbox missing", "description": "I cannot see the shared mailbox in my Outlook."}
+]
