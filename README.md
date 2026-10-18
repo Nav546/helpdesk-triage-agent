@@ -36,6 +36,24 @@ curl -X POST localhost:8000/triage -H 'content-type: application/json' \
   -d '{"summary":"Printer offline","description":"queue stuck"}'
 ```
 
+## ServiceNow connector (optional)
+
+The agent can triage new incidents from a ServiceNow instance. Use a free
+[Personal Developer Instance](https://developer.servicenow.com) with fake data.
+
+```bash
+set SN_INSTANCE=https://devXXXXX.service-now.com
+set SN_USER=admin
+set SN_PASSWORD=your-instance-password
+python -m triage_agent.cli servicenow --limit 5           # dry run, prints only
+python -m triage_agent.cli servicenow --limit 5 --apply   # adds work notes
+```
+
+Safety: dry run by default, HTTPS only, credentials from environment variables, and
+the only field ever written is `work_notes`. It never changes state, priority,
+assignment or category, and never touches accounts. Tests use a fake transport, so CI
+needs no live instance.
+
 ## Layout
 
 ```

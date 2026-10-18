@@ -118,3 +118,10 @@ def test_security_incident_is_at_least_p2(agent):
 def test_confidence_is_not_saturated(agent):
     r = agent.triage(t("Printer is out of toner"))
     assert 0.35 <= r.confidence < 1.0
+
+
+def test_runbook_parser_handles_windows_line_endings():
+    text = (ROOT / "runbooks" / "printer.md").read_text(encoding="utf-8").replace("\n", "\r\n")
+    book = parse_runbook(text)
+    assert book.category == "printer"
+    assert book.steps
