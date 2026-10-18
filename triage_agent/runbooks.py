@@ -42,7 +42,8 @@ def _parse_list(block: str) -> list[str]:
     return items
 
 
-    text = text.replace("\r\n", "\n")
+def parse_runbook(text: str) -> Runbook:
+    text = text.replace("\r\n", "\n")  # Windows checkouts use CRLF
     m = re.match(r"^---\n(.*?)\n---\n(.*)$", text, re.S)
     if not m:
         raise ValueError("runbook is missing front matter")
