@@ -38,8 +38,6 @@ curl -X POST localhost:8000/triage -H 'content-type: application/json' \
 
 ## ServiceNow connector (optional)
 
-## ServiceNow connector (optional)
-
 Status: tested with a mocked API only; not yet verified against a live instance.
 
 The agent can triage new incidents from a ServiceNow instance. ...
